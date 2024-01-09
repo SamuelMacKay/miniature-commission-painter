@@ -89,6 +89,8 @@ If this section grows too long, you may want to split it off into a separate fil
 The live link can be found here - <https://code-institute-org.github.io/love-running-2.0/index.html>-->
 
 ## Credits
+  - Navbar from Bootstrap (https://getbootstrap.com/docs/5.3/components/navbar/#nav)
+  - 
 <!--
 In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
 
