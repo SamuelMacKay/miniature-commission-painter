@@ -3,29 +3,55 @@
 /* ----------------------------------------------------------------------- Color */
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
-  background-color: slategray!important;
+  background-color: #495057!important;
 }
+.social-links li a i:hover {
+  background: #be6d00;
 }
+
+.nav-link {
+  color: #e98600;
+  background-color: #495057;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #e98600;
+}
+
+.nav {
+  --bs-nav-link-hover-color: #be6d00;
+}
+
 /* ----------------------------------------------------------------------- Nav Bar */
 
-
-.nav-item {
-  align-items: end;
-}
-.navbar-brand {
-  height: 10%;
-  width: 10%;
+.nav-align{
+  justify-content:flex-end;
 }
 
+.nav-brand, img {
+  border-radius: 50%;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+
+.nav-link {
+ 
+}
 /* ----------------------------------------------------------------------- Hero Image */
-#hero-image{
-  height:600px;
-  width: 100%;
-  background: url('assets/images/hero-image.jpg') no-repeat center center;
+/* #hero-image img {
+  height: 800px;
+  width: 100%; */
+
 
   /* animation-name: hero-zoom;
   animation-duration: 5s;
   animation-fill-mode: forwards; */
+}
+
+#hero-image {
+  align-content: center;
 }
 
 #hero-outer{
@@ -42,6 +68,11 @@
   bottom: 0;
   width: 100%;
   text-align: center;
+  background-color: #495057;
+}
+
+footer-margin, ul {
+  margin-top: 1rem;
 }
 
 /* ----------------------------------------------------------------------- Social Links */
@@ -64,6 +95,9 @@
   -o-transition: all 0.35s ease-in-out;
 }
 
-.social-links li a i:hover {
-  background: #be6d00;
+/* ----------------------------------------------------------------------- Text Transform */
+
+.uppercase {
+  text-transform: uppercase;
 }
+
