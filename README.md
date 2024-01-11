@@ -5,15 +5,26 @@ The site will have an easy to see gallery showcasing the painting standards and 
 
 ![Responsice Mockup]()
 
-## Features
+## User Stories 
+|Story No.|Story|
+| ------------- | ------------- |
+|1| As a First-time User, <br> I want to be able to see examples of what the artist has created <br> so I can tell if they are worth the money and if I want to have my army look like that. <br><br> I know I am done when I have an easy to use gallery that shows all past commissions and artwork- |
+|2|As the artist, <br> I want anyone who goes to the website to be able to get the information they need easily <br> so that users are more likely to view my art and request a commission. <br><br> I know I am done when I have and inviting landing page with noticeable buttons for seeing the gallery and getting a quote for a commission.|
+|3|As a Potential Buyer, <br> I want to be able to get in touch with the artist about my idea and quickly get a quote <br> So I can get an idea how much it will cost and how long it will take <br><br> I know I am done when I have a way to contact the artist, and easy to follow instructions to get the important information across to get an accurate quote.|
+|4|As a First-time user,<br> I want to be able to find a community of like-minded people <br> so I can find people who share my interests. <br> <br> I know I am done users can quickly find social media links to the artists community, video tutorials and live streams.|
+|5|As a new painter, <br> I want to be able to get tips on how to paint better <br> so that I can improve as a painter.<br> <br> I know I am done when users can find tutorials on the arists platorms. |
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+***
+
+<!-- ## Features
+
+In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things. -->
 
 ### Existing Features
 
 - __Navigation Bar__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Get in Touch page and is identical in each page to allow for easy navigation.
+  - Featured on all three pages, the full responsive navigation bar includes links to the Home page, Gallery and Commission page and is identical in each page to allow for easy navigation.
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
 
 ![Nav Bar]()
@@ -54,7 +65,7 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 
-- Another feature idea
+- an about Artist Page
 
 ## Testing
 
