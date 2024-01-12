@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
 
+body {
+  font-family: 'EXO' 200, sans-serif;
+}
+
 /* ----------------------------------------------------------------------- Color */
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
@@ -32,7 +36,7 @@
   justify-content:flex-end;
 }
 
-.nav-brand, img {
+nav img {
   border-radius: 50%;
 }
 
@@ -40,34 +44,26 @@
   border-radius: 0;
 }
 
+.navbar-nav .nav-link.active {
+  color: #e84610;
+}
+
+.nav-link:hover {
+  color: #e84610;
+}
 
 /* ----------------------------------------------------------------------- Hero Image */
-/* #hero-image img {
-  height: 800px;
-  width: 100%; */
-
-
-  /* animation-name: hero-zoom;
-  animation-duration: 5s;
-  animation-fill-mode: forwards; */
-}
-
-#hero-image {
-  align-content: center;
-}
-
-#hero-outer{
-  height:600px;
+ .hero-image {
   width: 100%;
-  overflow: hidden;
-  position: relative;
-}
+ }
+
 
 /* ----------------------------------------------------------------------- Footer */
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
+  height: 60px;
   width: 100%;
   text-align: center;
   background-color: #495057;
@@ -77,15 +73,21 @@ footer-margin, ul {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 1026px) {
+  #hidden-link {
+      display: none;
+  }
+}
 /* ----------------------------------------------------------------------- Social Links */
 .social-links {
   
 }
 
-.social-links li a i {
+.social-links div a i {
   width: 49px;
   height: 49px;
   padding: 12px 0;
+  margin: 5px;
   border-radius: 50%;
   font-size: 25px;
   text-align: center;
@@ -95,6 +97,10 @@ footer-margin, ul {
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links div a i:hover {
+  background: #e84610;
 }
 
 /* ----------------------------------------------------------------------- Text Transform */
