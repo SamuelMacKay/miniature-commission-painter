@@ -101,7 +101,7 @@ The live link can be found here - <https://code-institute-org.github.io/love-run
 
 ## Credits
   - Navbar from Bootstrap (https://getbootstrap.com/docs/5.3/components/navbar/#nav)
-  - 
+  - embedded video (https://www.youtube.com/watch?v=DoUPT_ctBBY&t=520s) as a placeholder for how videos could be shown.
 <!--
 In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
 
