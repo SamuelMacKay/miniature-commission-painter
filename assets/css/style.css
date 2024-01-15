@@ -6,6 +6,10 @@ body {
 }
 
 /* ----------------------------------------------------------------------- Color */
+body {
+  background-color: #495057;
+}
+
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
   background-color: #495057 !important;
@@ -77,6 +81,18 @@ nav img {
   height: 100%;
 }
 
+@media screen and (min-width:481px) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
 .cropped {
   width: 150px;
   height: 150px;
@@ -125,6 +141,37 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/* ----------------------------------------------------------------------- Gallery */
+#photo {
+  clear: both;
+  line-height: 0;
+  column-count: 3;
+  column-gap: 0px;
+}
+
+#photo img {
+  width: 100%;
+  border-style: solid;
+  border-color: #495057;
+}
+
+#photo iframe {
+  width: 100%;
+}
+
+@media screen and (max-width: 943px) {
+  #photo {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #photo {
+    column-count: 1;
+  }
+}
+
 
 /* ----------------------------------------------------------------------- Social Links */
 .social-links {}
