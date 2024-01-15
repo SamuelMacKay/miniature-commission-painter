@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <nav class="navbar nav-justified navbar-expand-md bg-body-tertiary">
+        <nav class="navbar nav-justified fixed-top navbar-expand-md bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/logo.jpg" alt="Logo" width="49" height="49">
@@ -46,13 +46,14 @@
         </nav>
     </header>
     <section>
-        <div class="hero-image-outer">
-            <div class="hero-image">
-                <!-- <img class="img-fluid mobile-hidden" src="assets/images/desktop-landing-page.jpg" alt="Photo of hand painted Miniature"> -->
-                <img class="img-fluid desktop-hidden" src="assets/images/mobile-landing-page.jpg"
-                    alt="Photo of hand painted Miniature">
+        <div id="landing-img" class="hero-image img-fluid">
+            <img class="img-fluid" src="assets/images/mobile-landing-page.jpg" alt="Photo of hand painted Miniature">
+            <div id="call-to-action">
+                <a class="btn btn-lg btn-primary" href="gallery.html" role="button">Gallery</a>
+                <a class="btn btn-lg btn-primary" href="commission.html" role="button">Quote</a>
             </div>
         </div>
+        
     </section>
     <footer class="footer container-fluid">
         <div id="footer-margin">
