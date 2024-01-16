@@ -51,21 +51,43 @@
             <h3>You Dream, We Create</h3>
         </div>
         <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <!-- <div class="row"> -->
+            <!-- <div class="col commission-border"></div> -->
+            <div class="">
+                <div class="level-selector">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paintinglevel" id="herolevel"  checked>
+                    <label class="form-check-label" for="herolevel">
+                        Hero Level
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paintinglevel" id="unitlevel">
+                    <label class="form-check-label" for="unitlevel">
+                        Unit Level
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paintinglevel" id="armylevel">
+                    <label class="form-check-label" for="armylevel">
+                        Army Level
+                    </label>
+                </div>
+            </div>            
+            <div class="form-floating"  id="commission-form">
+                <textarea class="form-control" placeholder="Tell me about your vision..."id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Tell me about your vision...</label>
+                
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            <div class="mb-3 reference-photo-margin">
+                <label for="formFileMultiple" class="form-label">Add Some Reference Photos...</label>
+                <input class="form-control reference-photo-input" type="file" id="formFileMultiple" multiple>
+              </div>
+            <button type="submit" id="quote-button" class="btn btn-primary uppercase">quote</button>
+        </div>
+        <!-- <div class="col commission-border"></div> -->
+    </div>
+        </form>
     </section>
     <footer class="footer container-fluid">
         <div id="footer-margin">

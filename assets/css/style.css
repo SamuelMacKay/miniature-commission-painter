@@ -11,6 +11,10 @@ body {
   background-color: #495057;
 }
 
+form {
+  color: #e98600;
+}
+
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
   background-color: #495057 !important;
@@ -50,6 +54,10 @@ button:focus:not(:focus-visible) {
   color: #e84610;
 }
 
+.form-check-input:checked {
+  background-color: #e84610;
+  border-color: #e84610;
+}
 
 /* ----------------------------------------------------------------------- Nav Bar */
 
@@ -60,6 +68,7 @@ button:focus:not(:focus-visible) {
 
 nav img {
   border-radius: 50%;
+  border: solid #33383d;
 }
 
 .nav-pills .nav-link {
@@ -74,6 +83,8 @@ nav img {
 
 .navbar {
   --bs-navbar-padding-y: 0;
+  border: solid #33383d;
+
 }
 
 /* ----------------------------------------------------------------------- Hero Image */
@@ -129,6 +140,8 @@ nav img {
   width: 100%;
   text-align: center;
   background-color: #495057;
+  border: solid #33383d;
+
 }
 
 footer-margin,
@@ -187,10 +200,47 @@ ul {
 
 .commission-title {
   text-align: center;
+  padding-top: 15px;
 
 }
 
+.level-selector {
+  width: 33%;
+  margin: auto;
+}
 
+
+.mb-3 {
+  margin-left: 20%;
+}
+
+
+  #commission-form {
+    width: 72%;
+    margin: auto;
+  }
+
+/* 
+@media only screen and (max-width: 770px) { 
+  .commission-border { 
+    display: none; 
+  } 
+} */
+
+.reference-photo-input {
+  width: 60%;
+  font-size: 10px;
+}
+
+.form-floating>.form-control {
+  padding: 1rem 0.75rem;
+  height: 250px;
+  margin: 15px 0;
+}
+
+#quote-button {
+  float: right;
+}
 
 /* ----------------------------------------------------------------------- Social Links */
 /* .social-links {} */
@@ -205,6 +255,7 @@ ul {
   padding: 12px 0;
   margin: 5px;
   border-radius: 50%;
+  border: solid #33383d;
   font-size: 25px;
   text-align: center;
   color: #fafafa;
@@ -227,6 +278,12 @@ ul {
 
 /* ----------------------------------------------------------------------- Gallery Modal */
 .gallery-style {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -289,9 +346,9 @@ ul {
 
 /* The Close Button */
 .close {
-  position: sticky;
-  top: 15px;
-  right: 65px;
+  position: fixed;
+  top: 75px;
+  right: 35px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
