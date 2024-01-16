@@ -46,15 +46,19 @@
         </nav>
     </header>
     <section id="photo">
-        <iframe class="gallery-style" width="560" height="315" src="https://www.youtube.com/embed/DoUPT_ctBBY?si=-C_Lf9ieViQJwWV_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <img class="gallery-style" src="assets/images/gallery-barbarian.jpg">
-        <img class="gallery-style" src="assets/images/gallery-berserker.jpg">
-        <img class="gallery-style" src="assets/images/gallery-minotaur.jpg">
-        <img class="gallery-style" src="assets/images/gallery-ogre.jpg">        
-        <img class="gallery-style" src="assets/images/gallery-warrior.jpg">
-        <img class="gallery-style" src="assets/images/gallery-lizard.jpg">
-        <img class="gallery-style" src="assets/images/gallery-wizard.jpg">
-        <img class="gallery-style" src="assets/images/gallery-ratman.jpg">
+        <iframe class="gallery-style" width="560" height="315"
+            src="https://www.youtube.com/embed/DoUPT_ctBBY?si=-C_Lf9ieViQJwWV_" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <img class="gallery-style myImg" src="assets/images/gallery-barbarian.jpg" alt="Darkoath Savager Unit Leader">
+        <img class="gallery-style myImg" src="assets/images/gallery-berserker.jpg" alt="Darkoath Savager Berserker">
+        <img class="gallery-style myImg" src="assets/images/gallery-minotaur.jpg" alt="Ogroid Theridon Unit Leader">
+        <img class="gallery-style myImg" src="assets/images/gallery-ogre.jpg" alt="Chaos Lord of Khorne (Converted)">
+        <img class="gallery-style myImg" src="assets/images/gallery-warrior.jpg" alt="Darkoath Savager with a Sword and Shield">
+        <img class="gallery-style myImg" src="assets/images/gallery-lizard.jpg" alt="Kroxigor Warspawn">
+        <img class="gallery-style myImg" src="assets/images/gallery-wizard.jpg" alt="Rotbringer Sorcerer">
+        <img class="gallery-style myImg" src="assets/images/gallery-ratman.jpg" alt="Skaven Deathmaster">
 
     </section>
     <footer class="footer container-fluid">
@@ -94,33 +98,41 @@
         </div>
         </div>
     </footer>
-    <!-- <div id="myModal" class="modal">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
-      </div>
-      
+    </div>
+
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
+
+        // Get all images with the class 'myImg' and insert them inside the modal
+        var images = document.getElementsByClassName("myImg");
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
-        img.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
+
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            img.onclick = function (evt) {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
         }
-        
+
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-        
+
         // When the user clicks on <span> (x), close the modal
-        modalImg.onclick = function() { 
-          modal.style.display = "none";
+        span.onclick = function () {
+            modal.style.display = "none";
         }
-        </script> -->
+    </script>
+
 </body>
 
 </html>
