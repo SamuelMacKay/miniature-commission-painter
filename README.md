@@ -92,7 +92,7 @@ New code:
                 <source class="hero-image" media="(min-width:768px)" srcset="assets/images/mobile-landing-page-lg.jpg">
                 <img class="hero-image" src="assets/images/mobile-landing-page-lg.jpg" alt="Photo of hand painted miniature">
               </picture>
-
+```
 ### Validator Testing
 <!-->
 - HTML
