@@ -8,7 +8,7 @@ The site will have an easy to see gallery showcasing the painting standards and 
 ## User Stories 
 |Story No.|Story|
 | ------------- | ------------- |
-|1| As a First-time User, <br> I want to be able to see examples of what the artist has created <br> so I can tell if they are worth the money and if I want to have my army look like that. <br><br> I know I am done when I have an easy to use gallery that shows all past commissions and artwork- |
+|1| As a First-time User, <br> I want to be able to see examples of what the artist has created <br> so I can tell if they are worth the money and if I want to have my army look like that. <br><br> I know I am done when I have an easy to use gallery that shows all past commissions and artwork |
 |2|As the artist, <br> I want anyone who goes to the website to be able to get the information they need easily <br> so that users are more likely to view my art and request a commission. <br><br> I know I am done when I have and inviting landing page with noticeable buttons for seeing the gallery and getting a quote for a commission.|
 |3|As a Potential Buyer, <br> I want to be able to get in touch with the artist about my idea and quickly get a quote <br> So I can get an idea how much it will cost and how long it will take <br><br> I know I am done when I have a way to contact the artist, and easy to follow instructions to get the important information across to get an accurate quote.|
 |4|As a First-time user,<br> I want to be able to find a community of like-minded people <br> so I can find people who share my interests. <br> <br> I know I am done users can quickly find social media links to the artists community, video tutorials and live streams.|
@@ -57,7 +57,7 @@ In this section, you should go over the different parts of your project, and des
   - It will have a form that will be easy to fill out and give the artist enough information to form a general price quote.
   - Information such as What you want painted,(i.e army, unit or hero) a section for a breif description of any particulars they want (i.e any conversions, scheme/colour/theme) as well as a way to link a .JPG for reference material.
 
-![Sign Up]()
+![Commissions]()
 
 <!--For some/all of your features, you may choose to reference the specific project files that implement them.
 
@@ -76,6 +76,22 @@ In addition, you should mention in this section how your project looks and works
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.-->
+
+### Bugs
+- The landing page image was not scaling as intended over all screen sizes, so i added new code and multiple images to load at correct screen sizes
+Original code:
+```
+<img class="hero-image" src="assets/images/mobile-landing-page-lg.jpg" alt="Photo of hand painted miniature">
+```
+New code:
+```
+<picture class="hero-image">
+                <source class="hero-image" media="(max-width:376px)" srcset="assets/images/mobile-landing-page-xsm.jpg">
+                <source class="hero-image" media="(min-width:377px) and (max-width:426px)" srcset="assets/images/mobile-landing-page-sm.jpg">
+                <source class="hero-image" media="(min-width:427px) and (max-width:768px)" srcset="assets/images/mobile-landing-page-med.jpg">
+                <source class="hero-image" media="(min-width:768px)" srcset="assets/images/mobile-landing-page-lg.jpg">
+                <img class="hero-image" src="assets/images/mobile-landing-page-lg.jpg" alt="Photo of hand painted miniature">
+              </picture>
 
 ### Validator Testing
 <!-->
@@ -100,8 +116,25 @@ If this section grows too long, you may want to split it off into a separate fil
 The live link can be found here - <https://code-institute-org.github.io/love-running-2.0/index.html>-->
 
 ## Credits
-  - Navbar from Bootstrap (https://getbootstrap.com/docs/5.3/components/navbar/#nav)
-  - embedded video (https://www.youtube.com/watch?v=DoUPT_ctBBY&t=520s) as a placeholder for how videos could be shown.
+  
+  
+
+### Content
+- Processes from the CI Love Running project was used to help create this website - [CI Love Running](https://code-institute-org.github.io/love-running-2.0/index.html)
+
+- HTML, CSS and Javascript code help was taken from w3schools - [W3Schools](https://www.w3schools.com/)
+
+- Navbar from Bootstrap (https://getbootstrap.com/docs/5.3/components/navbar/#nav)
+
+
+### Media
+
+- embedded video (https://www.youtube.com/watch?v=DoUPT_ctBBY&t=520s) from [Richard Gray](https://www.youtube.com/@demonrich) as a placeholder for how videos could be shown. 
+
+
+#### Icons
+- All page Icons - [Font Awesome](https://fontawesome.com/)
+
 <!--
 In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
 
