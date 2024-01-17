@@ -8,7 +8,8 @@ body {
 
 /* ----------------------------------------------------------------------- Color */
 body {
-  background-color: #495057;
+  background: linear-gradient(180deg , #495057, #33383d);
+  height: 100vh;
 }
 
 form {
@@ -52,6 +53,10 @@ button:focus:not(:focus-visible) {
 
 .nav-link:hover {
   color: #e84610;
+}
+
+h3 {
+  border-bottom: solid #33383d;
 }
 
 .form-check-input:checked {
@@ -98,14 +103,28 @@ nav img {
     left: 0;
     bottom: 180px;
     width: 100%;
+    
 }
 
   .btn-lg {
-  --bs-btn-padding-y: 13px;
-  margin: 0 5%;
-  width: 39%;
-  height: 60px;
-  text-align: center;
+    --bs-btn-padding-y: 13px;
+    margin: 0 5%;
+    width: 39%;
+    height: 60px;
+    text-align: center;
+    border-style: solid;
+    border-color: #33383d;
+ }
+
+ .cta-button {
+  background: linear-gradient(180deg , #e98600, #e84610);
+  border-style: solid;
+  border-color: #e84610;
+ }
+
+ .cta-button:hover {
+  background: linear-gradient(180deg , #e84610, #e84610);
+  
  }
 
  .btn-primary {
@@ -200,20 +219,38 @@ ul {
 
 .commission-title {
   text-align: center;
-  padding-top: 15px;
+  padding: 15px 0;
+  height: 110px;
+
 
 }
 
+.name-and-email {
+  max-width: 74%;
+  margin: auto;
+}
 .level-selector {
   width: 33%;
   margin: auto;
 }
 
+.form-check{
+  padding-left: 40%;
+}
 
-.mb-3 {
+
+#emailaddress {
+  width 50%
+  margin: auto;
+}
+
+.reference-photo-margin {
   margin-left: 15%;
 }
 
+.input-margin {
+  margin-left: 0;
+}
 
   #commission-form {
     width: 72%;
@@ -227,8 +264,13 @@ ul {
 
 .form-floating>.form-control {
   padding: 1rem 0.75rem;
-  height: 250px;
+  height: 150px;
   margin: 15px 0;
+}
+
+.float-right {
+  float: right;
+  width: 75%;
 }
 
 #quote-button {
@@ -262,7 +304,7 @@ ul {
   font-size: 25px;
   text-align: center;
   color: #fafafa;
-  background: #e98600;
+  background: linear-gradient(180deg , #e98600, #e84610);
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -270,7 +312,7 @@ ul {
 }
 
 .social-links div a i:hover {
-  background: #e84610;
+  background: linear-gradient(180deg , #e84610, #e84610);
 }
 
 /* ----------------------------------------------------------------------- Text Transform */

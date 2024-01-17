@@ -78,6 +78,7 @@ You should also mention in this section any interesting bugs or problems you dis
 If this section grows too long, you may want to split it off into a separate file and link to it from here.-->
 
 ### Bugs
+#### Bug 1
 - The landing page image was not scaling as intended over all screen sizes, so i added new code and multiple images to load at correct screen sizes
 Original code:
 ```
@@ -93,6 +94,8 @@ New code:
                 <img class="hero-image" src="assets/images/mobile-landing-page-lg.jpg" alt="Photo of hand painted miniature">
               </picture>
 ```
+#### Bug 2 
+
 ### Validator Testing
 <!-->
 - HTML
