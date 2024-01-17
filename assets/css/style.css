@@ -87,18 +87,17 @@ nav img {
 
 }
 
-/* ----------------------------------------------------------------------- Hero Image */
-.hero-image-outer {
-  display: grid;
-  height: 100%;
+/* ----------------------------------------------------------------------- Landing Page */
+.hero-image {
+  max-width: 100%;
+  height: auto;
 }
  
  #call-to-action {
-  position: sticky;
-  left: 0;
-  bottom: 180px;
-  margin-left: 10%;
-  margin-right: 10%;
+  position: fixed;
+    left: 0;
+    bottom: 180px;
+    width: 100%;
 }
 
   .btn-lg {
@@ -124,6 +123,7 @@ nav img {
 
 .hero-image {
   width: 100%;
+  position: fixed;
 }
 
 .commission-title {
@@ -211,7 +211,7 @@ ul {
 
 
 .mb-3 {
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 
@@ -219,13 +219,6 @@ ul {
     width: 72%;
     margin: auto;
   }
-
-/* 
-@media only screen and (max-width: 770px) { 
-  .commission-border { 
-    display: none; 
-  } 
-} */
 
 .reference-photo-input {
   width: 60%;
@@ -240,6 +233,16 @@ ul {
 
 #quote-button {
   float: right;
+  margin-right: 14%;
+}
+
+.font-size {
+  font-size: 10px;
+  font-weight: 400;
+} 
+
+.text-area-font {
+  font-size: 15px;
 }
 
 /* ----------------------------------------------------------------------- Social Links */
