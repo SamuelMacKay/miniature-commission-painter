@@ -16,9 +16,34 @@ The site will have an easy to see gallery showcasing the painting standards and 
 
 ***
 
-<!-- ## Features
+## Wireframes
+Below are the designs that I can use to build the site. I have used the user story numbers to link where I can meet the goal in my design. This will help me to think about the users needs as I build the page.
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things. -->
+### Home Page Design<br>
+User Story Number - 2<br>
+![Home Page Design](assets/media/wireframe-home-desktop.png)
+![Home Page Design](assets/media/wireframe-home-phone.png)
+
+### Gallery Page Design<br>
+User Story Number - 1, 5<br>
+![Gallery Page Design](assets/media/wireframe-gallery-desktop.png)
+![Gallery Page Design](assets/media/wireframe-gallery-phone.png)
+
+### Commission Page Design<br>
+User Story Number - 3<br>
+![Commission Page Design](assets/media/wireframe-commission-desktop.png)
+![Commission Page Design](assets/media/wireframe-commission-phone.png)
+
+
+### Community contacts <br>
+User Story Number - 4<br>
+![Footer Design](assets/media/wireframe-footer-phone.png)
+![Footer Design](assets/media/wireframe-footer-desktop.png)
+
+
+***
+
+## Features
 
 ### Existing Features
 
@@ -26,46 +51,53 @@ In this section, you should go over the different parts of your project, and des
 
   - Featured on all three pages, the full responsive navigation bar includes links to the Home page, Gallery and Commission page and is identical in each page to allow for easy navigation.
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+  - It will Collapse on smaller screen sizes to make it more managble and visually pleasing
 
-![Nav Bar]()
-
-- __The landing page image__
-
-  - The landing includes a hero image photograph of a painted army/mini with call to action buttons for getting your own commissions and seeing the gallery.
-  - This section introduces the user to Mackay's painting corner with an eye catching animation to grab their attention
-
-![Landing Page]()
+![Nav Bar](assets/media/final-navbar-desktop.png)
+![Nav Bar](assets/media/final-navbar-phone.png)
 
 - __The Footer__
 
   - The footer section includes links to the relevant social media sites for MacKay's Painting Corner. The links will open to a new tab to allow easy navigation for the user.
   - The footer is valuable to the user as it encourages them to keep connected via social media
+  - The footer will use simple recognisable images to represent what they link to, for simplicity
 
-![Footer]()
+![Footer](assets/media/final-footer-desktop.png)
+![Footer](assets/media/final-footer-phone.png)
+
+- __Home page__
+
+  - The home includes a hero image photograph of a painted army/mini with call to action buttons for getting your own commissions and seeing the gallery.
+  - This section will have to very noticable Call to Action buttons to make it easy to understand what you can do and where you can go from here
+
+![Landing Page](assets/media/final-home-desktop.png)
+![Landing Page](assets/media/final-home-phone.png)
 
 - __Gallery__
 
   - The gallery will provide the user with supporting images to see what the artist is capable of.
   - This section is valuable to the user as they will be able to compare the artist to the industry standards and the exepectations of the viewer.
-  - It will have distinct sections for "Army Level" "Unit Level" and "Hero Level" so viewers can see what they would be paying for.
+  - it will have embedded videos of tutorials from youtube, increasing exposure and community presence
 
-![Gallery]()
+![Gallery](assets/media/final-gallery-desktop.png)
+![Gallery](assets/media/final-gallery-phone.png)
 
 - __Commissions__
 
   - This page will allow the user to get in touch with the artist for the booking a commission.
   - It will have a form that will be easy to fill out and give the artist enough information to form a general price quote.
-  - Information such as What you want painted,(i.e army, unit or hero) a section for a breif description of any particulars they want (i.e any conversions, scheme/colour/theme) as well as a way to link a .JPG for reference material.
+  - Information such as What you want painted,(i.e army, unit or hero) a section for a breif description of any particulars they want (i.e any conversions, scheme/colour/theme, mini specifically) as well as a way to link a image for reference material.
 
-![Commissions]()
+![Commissions](assets/media/final-commission-desktop.png)
+![Commissions](assets/media/final-commission-phone.png)
 
-<!--For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:-->
 
 ### Features Left to Implement
 
-- an about Artist Page
+- an about Artist Page.
+- a tutorial specific page.
+- a way to index the gallery, so it can be organised by commision/unit type, and can be filtered and searched.
+- add quotes and images to the surrounding border of the commissions form, so people can see what others are saying about the service and get some ideas from other commissions.
 
 ## Testing
 
@@ -96,6 +128,62 @@ New code:
 ```
 #### Bug 2 
 
+- the footer was getting too crowded at smaller screen sizes, so I hid one of the least important icons at smaller screen sizes.
+Original code:
+```
+<div class="col list-inline-item social-links">
+                    <a href="https://www.gmail.com/" target="_blank">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="sr-only">Email</span>
+                    </a>
+                </div>
+```
+New Code:
+```
+<div id="hidden-link" class="col list-inline-item social-links">
+                    <a href="https://www.gmail.com/" target="_blank">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="sr-only">Email</span>
+                    </a>
+                </div>
+```
+Style:
+```
+@media only screen and (max-width: 768px) {
+  #hidden-link {
+    display: none;
+  }
+}
+```
+#### Bug 3 
+- The collapsed NavBar Toggler wasn't changing colour to match the theme of the website, so I discovered the correct way to edit the 'Hamburger Icon'.
+Original Code:
+```
+.custom-toggler .navbar-toggler-icon {
+  ackground-image: #e98600;
+}
+```
+New Code:
+```
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(233, 134, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+```
+
+#### Bug 
+- The Logo was not linking to the home page, as intended, and the Logo was not the correct 50px x 50px. fixed a typo in the code so it would work correctly and ajusted the inline style of the code.
+Original Code:
+```
+<a class="navbar-brand" href="index.hmtl">
+                    <img src="assets/images/logo.jpg" alt="Logo" width="49" height="49">
+                </a>
+```
+New Code:
+```
+<a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.jpg" alt="Logo" width="50" height="50">
+                </a>
+```
 ### Validator Testing
 <!-->
 - HTML
@@ -105,7 +193,36 @@ New code:
 
 ### Unfixed Bugs
 
-<!--You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.-->
+-Performance of Gallery is heavily burdened by the high quality images, and want to find a way to minimize the load time from them.
+
+### User stories Testing
+|Story No.|Result|Story/ Evidence|
+| ------------- | ------------- | ------------- |
+|1|<font color="green">Test Pass</font>|As a First-time User, <br> I want to be able to see examples of what the artist has created <br> so I can tell if they are worth the money and if I want to have my army look like that. <br><br> I know I am done when I have an easy to use gallery that shows all past commissions and artwork <br><br>Evidence:<br>There is an easy to access and simple gallery to display images.<br> ![Gallery](assets/media/final-gallery-desktop.png)|
+|2|<font color="green">Test Pass</font> |As the artist, <br> I want anyone who goes to the website to be able to get the information they need easily <br> so that users are more likely to view my art and request a commission. <br><br> I know I am done when I have and inviting landing page with noticeable buttons for seeing the gallery and getting a quote for a commission.<br><br>Evidence:<br>The Home page has a big Image of a recent commission and has to easy to see,read and understand call to action buttons. <br>![home](assets/media/dropin.webp)![Home](assets/media/final-home-desktop.png)|
+|3|*<font color="yellow">Test Pass, more required</font>* |As a Potential Buyer, <br> I want to be able to get in touch with the artist about my idea and quickly get a quote <br> So I can get an idea how much it will cost and how long it will take <br><br> I know I am done when I have a way to contact the artist, and easy to follow instructions to get the important information across to get an accurate quote.<br><br>Evidence:<br> Potential buyers have a form that makes guides you to give all the important information to get an accurate quote, in a simple and quick format. (Currently only links to a thankyou.html, still needs to be connected to a backend system)<br>![Commission](assets/media/final-commission-desktop.png)||
+|4|*<font color="yellow">Test Pass, more required</font>* |As a First-time user,<br> I want to be able to find a community of like-minded people <br> so I can find people who share my interests. <br> <br> I know I am done users can quickly find social media links to the artists community, video tutorials and live streams.<br><br>Evidence:<br> First time users have a noticble footer that always shows at the bottom of the screen with simple, recognisable icons to portray the social network connected to the link. (currently only links to the homepage of the websites connected, actual social media accounts will need to be created to be linked).<br>![Footer](assets/media/final-footer-desktop.png)|
+|5|<font color="green">Test Pass</font> |As a new painter, <br> I want to be able to get tips on how to paint better <br> so that I can improve as a painter.<br> <br> I know I am done when users can find tutorials on the arists platorms. <br><br>Evidence:<br> In the gallery there are imbedded youtube videos that are tutorials. and there are links to the artists social media's in the footer.(Embedded video is a place holder)<br> ![Embedded Video Tutorials](assets/media/final-gallery-desktop.png)|
+
+### Accessibility Testing
+
+To check the colors and fonts, I used Lighthouse in the Google devtools. The results are shown below:
+
+| Home  |
+| ------- |
+| ![lighthouse result index page](assets/media/home-accessibility.png) |
+
+| Gallery |
+| ------- |
+| ![lighthouse result lessons page](assets/media/gallery-accessibility.png) |
+
+| Commission | 
+| ------- |
+| ![lighthouse result exams page](assets/media/commission-accessibility.png) |
+
+| Thank You |
+| ------- |
+| ![lighthouse result upload page](assets/media/thankyou-accessibility.png) |
 
 ## Deployment
 
@@ -127,8 +244,7 @@ The live link can be found here - <https://code-institute-org.github.io/love-run
 
 - HTML, CSS and Javascript code help was taken from w3schools - [W3Schools](https://www.w3schools.com/)
 
-- Navbar from Bootstrap (https://getbootstrap.com/docs/5.3/components/navbar/#nav)
-
+- Navbar from Bootstrap, buttons and form taken from bootstrap5 (https://getbootstrap.com/docs/5.3)
 
 ### Media
 
@@ -137,38 +253,3 @@ The live link can be found here - <https://code-institute-org.github.io/love-run
 
 #### Icons
 - All page Icons - [Font Awesome](https://fontawesome.com/)
-
-<!--
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-
-You can break the credits section up into Content and Media, depending on what you have included in your project.-->
-
-### Content
-<!--
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)-->
-
-### Media
-<!--
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer!-->
-
-## Other General Project Advice
-
-<!--Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work!
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message
-  - Make sure to keep the messages in the imperative mood
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept.
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process!-->
