@@ -57,6 +57,7 @@ button:focus:not(:focus-visible) {
 
 h3 {
   border-bottom: solid #33383d;
+  padding-bottom: 5px;
 }
 
 .form-check-input:checked {
@@ -112,8 +113,8 @@ nav img {
     width: 39%;
     height: 60px;
     text-align: center;
-    border-style: solid;
-    border-color: #33383d;
+    /* border-style: solid;
+    border-color: #33383d; */
  }
 
  .cta-button {
@@ -287,6 +288,15 @@ ul {
   font-size: 15px;
 }
 
+/* ----------------------------------------------------------------------- Thankyou.html */
+#back-to-gallery {
+  width: 60%;
+  margin: auto;
+}
+
+.btg-button {
+  margin: 30% 30% 0 30%;
+}
 /* ----------------------------------------------------------------------- Social Links */
 /* .social-links {} */
 
