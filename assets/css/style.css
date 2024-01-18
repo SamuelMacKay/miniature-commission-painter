@@ -8,7 +8,7 @@ body {
 
 /* ----------------------------------------------------------------------- Color */
 body {
-  background: linear-gradient(180deg , #495057, #33383d);
+  background: linear-gradient(180deg, #495057, #33383d);
   height: 100vh;
 }
 
@@ -98,44 +98,44 @@ nav img {
   max-width: 100%;
   height: auto;
 }
- 
- #call-to-action {
+
+#call-to-action {
   position: fixed;
-    left: 0;
-    bottom: 180px;
-    width: 100%;
-    
+  left: 0;
+  bottom: 180px;
+  width: 100%;
+
 }
 
-  .btn-lg {
-    --bs-btn-padding-y: 13px;
-    margin: 0 5%;
-    width: 39%;
-    height: 60px;
-    text-align: center;
-    /* border-style: solid;
+.btn-lg {
+  --bs-btn-padding-y: 13px;
+  margin: 0 5%;
+  width: 39%;
+  height: 60px;
+  text-align: center;
+  /* border-style: solid;
     border-color: #33383d; */
- }
+}
 
- .cta-button {
-  background: linear-gradient(180deg , #e98600, #e84610);
+.cta-button {
+  background: linear-gradient(180deg, #e98600, #e84610);
   border-style: solid;
   border-color: #e84610;
- }
+}
 
- .cta-button:hover {
-  background: linear-gradient(180deg , #e84610, #e84610);
-  
- }
+.cta-button:hover {
+  background: linear-gradient(180deg, #e84610, #e84610);
 
- .btn-primary {
+}
+
+.btn-primary {
   --bs-btn-bg: #e98600;
   --bs-btn-border-color: #e98600;
   --bs-btn-hover-bg: #e84610;
   --bs-btn-hover-border-color: #e84610;
 }
 
- #hero source {
+#hero source {
   max-width: 100%;
   max-height: 100vh;
   margin: auto;
@@ -187,6 +187,7 @@ ul {
   cursor: pointer;
   transition: 0.3s;
 }
+
 #photo {
   clear: both;
   line-height: 0;
@@ -230,18 +231,18 @@ ul {
   max-width: 74%;
   margin: auto;
 }
+
 .level-selector {
   width: 33%;
   margin: auto;
 }
 
-.form-check{
+.form-check {
   padding-left: 40%;
 }
 
 
 #emailaddress {
-  width 50%
   margin: auto;
 }
 
@@ -253,10 +254,10 @@ ul {
   margin-left: 0;
 }
 
-  #commission-form {
-    width: 72%;
-    margin: auto;
-  }
+#commission-form {
+  width: 72%;
+  margin: auto;
+}
 
 .reference-photo-input {
   width: 60%;
@@ -282,7 +283,7 @@ ul {
 .font-size {
   font-size: 10px;
   font-weight: 400;
-} 
+}
 
 .text-area-font {
   font-size: 15px;
@@ -297,6 +298,7 @@ ul {
 .btg-button {
   margin: 30% 30% 0 30%;
 }
+
 /* ----------------------------------------------------------------------- Social Links */
 /* .social-links {} */
 
@@ -314,7 +316,7 @@ ul {
   font-size: 25px;
   text-align: center;
   color: #fafafa;
-  background: linear-gradient(180deg , #e98600, #e84610);
+  background: linear-gradient(180deg, #e98600, #e84610);
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -322,7 +324,7 @@ ul {
 }
 
 .social-links div a i:hover {
-  background: linear-gradient(180deg , #e84610, #e84610);
+  background: linear-gradient(180deg, #e84610, #e84610);
 }
 
 /* ----------------------------------------------------------------------- Text Transform */
@@ -344,21 +346,32 @@ ul {
   transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -382,7 +395,8 @@ ul {
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content,
+#caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -390,13 +404,23 @@ ul {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
@@ -418,7 +442,7 @@ ul {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
