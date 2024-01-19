@@ -93,15 +93,31 @@ nav img {
 }
 
 /* ----------------------------------------------------------------------- Landing Page */
-.hero-image {
+/* .hero-image {
   max-width: 100%;
   height: auto;
+} */
+
+#landing-img {
+  background-color: #495057;
+  background-image: url('../images/mobile-landing-page-xsm.webp');
+  background-repeat: no-repeat;
+  background-position: center center; /* horizontal vertical */
+  background-size: cover; /* or contain, depending on your needs */
 }
 
+@media (orientation: landscape) {
+#landing-img {
+  background-image: url('../images/mobile-landing-page-lg.webp');
+  background-repeat: no-repeat;
+  background-position: top center; /* horizontal vertical */
+  background-size: cover; /* or contain, depending on your needs */
+}
+}
 #call-to-action {
   position: fixed;
   left: 0;
-  bottom: 180px;
+  bottom: 25%;
   width: 100%;
 
 }
