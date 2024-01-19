@@ -12,6 +12,9 @@ body {
   height: 100vh;
 }
 
+.home-page-title {
+  color: #e98600;
+}
 form {
   color: #e98600;
 }
@@ -28,6 +31,7 @@ form {
 .nav-link {
   color: #e98600;
   background-color: #495057;
+  text-shadow: -1px 0 black, 0 1px #33383d, 1px 0 #33383d, 0 -1px #33383d;
 }
 
 .custom-toggler.navbar-toggler {
@@ -49,13 +53,14 @@ button:focus:not(:focus-visible) {
 
 .navbar-nav .nav-link.active {
   color: #e84610;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .nav-link:hover {
   color: #e84610;
 }
 
-h3 {
+.commission-title h3 {
   border-bottom: solid #33383d;
   padding-bottom: 5px;
 }
@@ -63,6 +68,10 @@ h3 {
 .form-check-input:checked {
   background-color: #e84610;
   border-color: #e84610;
+}
+
+.text-shadow {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* ----------------------------------------------------------------------- Nav Bar */
@@ -74,10 +83,6 @@ h3 {
 nav img {
   border-radius: 50%;
   border: solid #33383d;
-}
-
-.nav-pills .nav-link {
-  border-radius: 0;
 }
 
 .navbar-nav {
@@ -93,10 +98,6 @@ nav img {
 }
 
 /* ----------------------------------------------------------------------- Landing Page */
-/* .hero-image {
-  max-width: 100%;
-  height: auto;
-} */
 
 #landing-img {
   background-color: #495057;
@@ -114,10 +115,44 @@ nav img {
   background-size: cover; /* or contain, depending on your needs */
 }
 }
+
+.home-page-title {
+  text-align: center;
+}
+
+.home-page-title h2 {
+  padding-top: 5%;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.home-page-title h3 {
+  max-width: 60%; 
+  margin: auto;
+}
+
+@media (orientation: landscape) {
+  .home-page-title h3 {
+   display: none;
+  }
+  }
+
+@media (orientation: landscape) {
+  .home-page-title h2 {
+    font-size: 50px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 281px){
+  .home-page-title h2 {
+    font-size: 30px;
+  }
+}
+
 #call-to-action {
   position: fixed;
   left: 0;
-  bottom: 25%;
+  bottom: 20%;
   width: 100%;
 
 }
@@ -128,8 +163,7 @@ nav img {
   width: 39%;
   height: 60px;
   text-align: center;
-  /* border-style: solid;
-    border-color: #33383d; */
+
 }
 
 .cta-button {
