@@ -114,10 +114,6 @@ If this section grows too long, you may want to split it off into a separate fil
 - The landing page image was not scaling as intended over all screen sizes, so i added new code and multiple images to load at correct screen sizes
 Original code:
 ```
-<img class="hero-image" src="assets/images/mobile-landing-page-lg.jpg" alt="Photo of hand painted miniature">
-```
-New code:
-```
 <picture class="hero-image">
                 <source class="hero-image" media="(max-width:376px)" srcset="assets/images/mobile-landing-page-xsm.jpg">
                 <source class="hero-image" media="(min-width:377px) and (max-width:426px)" srcset="assets/images/mobile-landing-page-sm.jpg">
@@ -126,6 +122,30 @@ New code:
                 <img class="hero-image" src="assets/images/mobile-landing-page-lg.jpg" alt="Photo of hand painted miniature">
               </picture>
 ```
+New code:
+
+```
+<body id="landing-img">
+
+style:
+#landing-img {
+  background-color: #495057;
+  background-image: url('../images/mobile-landing-page-xsm.webp');
+  background-repeat: no-repeat;
+  background-position: center center; /* horizontal vertical */
+  background-size: cover; /* or contain, depending on your needs */
+}
+
+@media (orientation: landscape) {
+#landing-img {
+  background-image: url('../images/mobile-landing-page-lg.webp');
+  background-repeat: no-repeat;
+  background-position: top center; /* horizontal vertical */
+  background-size: cover; /* or contain, depending on your needs */
+}
+}
+```
+
 #### Bug 2 
 
 - the footer was getting too crowded at smaller screen sizes, so I hid one of the least important icons at smaller screen sizes.
@@ -170,7 +190,7 @@ New Code:
 }
 ```
 
-#### Bug 
+#### Bug 4
 - The Logo was not linking to the home page, as intended, and the Logo was not the correct 50px x 50px. fixed a typo in the code so it would work correctly and ajusted the inline style of the code.
 Original Code:
 ```
@@ -184,6 +204,15 @@ New Code:
                     <img src="assets/images/logo.jpg" alt="Logo" width="50" height="50">
                 </a>
 ```
+
+#### Bug 5
+- Performance of Gallery is heavily burdened by the high quality images.
+- Fixed by converting all images from .jpg to .webp and correcting their sizes.
+
+#### Bug 6
+- Commissions page is breaking on shorter phone lengths and lanscape mode. can't scroll to see the lower part of the form.
+
+
 ### Validator Testing
 <!-->
 - HTML
@@ -193,7 +222,7 @@ New Code:
 
 ### Unfixed Bugs
 
--Performance of Gallery is heavily burdened by the high quality images, and want to find a way to minimize the load time from them.
+-Commission Page is breaking at smaller screen heights. Cant see the lower half of the form and it won't scroll.
 
 ### User stories Testing
 |Story No.|Result|Story/ Evidence|
