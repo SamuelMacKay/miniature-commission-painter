@@ -67,7 +67,7 @@ button:focus:not(:focus-visible) {
 
 .form-check-input:checked {
   background-color: #e84610;
-  border-color: #e84610;
+  border-color: #e98600;
 }
 
 .text-shadow {
@@ -103,16 +103,16 @@ nav img {
   background-color: #495057;
   background-image: url('../images/mobile-landing-page-xsm.webp');
   background-repeat: no-repeat;
-  background-position: center center; /* horizontal vertical */
-  background-size: cover; /* or contain, depending on your needs */
+  background-position: center center;
+  background-size: cover; 
 }
 
 @media (orientation: landscape) {
 #landing-img {
   background-image: url('../images/mobile-landing-page-lg.webp');
   background-repeat: no-repeat;
-  background-position: top center; /* horizontal vertical */
-  background-size: cover; /* or contain, depending on your needs */
+  background-position: top center;
+  background-size: cover; 
 }
 }
 
@@ -125,17 +125,6 @@ nav img {
   font-size: 30px;
   font-weight: 700;
 }
-
-.home-page-title h3 {
-  max-width: 60%; 
-  margin: auto;
-}
-
-@media (orientation: landscape) {
-  .home-page-title h3 {
-   display: none;
-  }
-  }
 
 @media (orientation: landscape) {
   .home-page-title h2 {
@@ -376,10 +365,6 @@ ul {
   text-align: center;
   color: #fafafa;
   background: linear-gradient(180deg, #e98600, #e84610);
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
 }
 
 .social-links div a i:hover {
