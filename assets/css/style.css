@@ -344,11 +344,12 @@ ul {
 }
 
 .btg-button {
-  margin: 30% 30% 0 30%;
+  width: 100%;
+  height: auto;
+  margin: 30% 0;
 }
 
 /* ----------------------------------------------------------------------- Social Links */
-/* .social-links {} */
 
 .list-inline-item:not(:last-child) {
   margin-right: 0;
