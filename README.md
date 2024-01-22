@@ -204,18 +204,23 @@ New Code:
 ```
 
 #### Bug 4
-- The Logo was not linking to the home page, as intended, and the Logo was not the correct 50px x 50px. fixed a typo in the code so it would work correctly and ajusted the inline style of the code.
+- The "back-to-gallery" button on the thankyou.html was not scaling to fight the text at smaller screen widths. added a height to the btg-button class.
 Original Code:
 ```
-<a class="navbar-brand" href="index.hmtl">
-                    <img src="assets/images/logo.jpg" alt="Logo" width="49" height="49">
-                </a>
+style:
+.btg-button {
+  width: 100%;
+  margin: 30% 0;
+}
 ```
 New Code:
 ```
-<a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.jpg" alt="Logo" width="50" height="50">
-                </a>
+style:
+.btg-button {
+  width: 100%;
+  height: auto;
+  margin: 30% 0;
+}
 ```
 
 #### Bug 5
