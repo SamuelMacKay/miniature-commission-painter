@@ -119,6 +119,9 @@ If this section grows too long, you may want to split it off into a separate fil
 
    - thankyou.html: No errors were returned when passing through the official W3C validator<br> https://validator.w3.org/nu/?doc=https%3A%2F%2Fsamuelmackay.github.io%2Fminiature-commission-painter%2Fthankyou.html
 
+- CSS 
+    - style.css: No errors were returned when passing through offical Jigsaw validator<br> http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fsamuelmackay.github.io%2Fminiature-commission-painter%2Fassets%2Fcss%2Fstyle.css&usermedium=all&vextwarning=&warning=1
+
 ### Bugs
 #### Bug 1
 - The landing page image was not scaling as intended over all screen sizes, so i added new code and multiple images to load at correct screen sizes
@@ -190,7 +193,7 @@ Style:
 Original Code:
 ```
 .custom-toggler .navbar-toggler-icon {
-  ackground-image: #e98600;
+  background-image: #e98600;
 }
 ```
 New Code:
@@ -224,11 +227,11 @@ New Code:
 - Added a height of 525px to the form element.
 Original Code:
 ```
-<form class="form-height" action="thankyou.html" method="#">
+        <form action="thankyou.html" target="_self">
 ```
 New Code:
 ```
-<form class="form-height" action="thankyou.html" method="#">
+        <form class="form-height" action="thankyou.html" target="_self">
 
 style:
 .form-height{
@@ -237,22 +240,14 @@ style:
 
 ```
 
-### Validator Testing
-<!-->
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)-->
-
 ### Unfixed Bugs
-
--Commission Page is breaking at smaller screen heights. Cant see the lower half of the form and it won't scroll.
+ - n/a
 
 ### User stories Testing
 |Story No.|Result|Story/ Evidence|
 | ------------- | ------------- | ------------- |
 |1|<font color="green">Test Pass</font>|As a First-time User, <br> I want to be able to see examples of what the artist has created <br> so I can tell if they are worth the money and if I want to have my army look like that. <br><br> I know I am done when I have an easy to use gallery that shows all past commissions and artwork <br><br>Evidence:<br>There is an easy to access and simple gallery to display images.<br> ![Gallery](assets/media/final-gallery-desktop.png)|
-|2|<font color="green">Test Pass</font> |As the artist, <br> I want anyone who goes to the website to be able to get the information they need easily <br> so that users are more likely to view my art and request a commission. <br><br> I know I am done when I have and inviting landing page with noticeable buttons for seeing the gallery and getting a quote for a commission.<br><br>Evidence:<br>The Home page has a big Image of a recent commission and has to easy to see,read and understand call to action buttons. <br>![home](assets/media/dropin.webp)![Home](assets/media/final-home-desktop.png)|
+|2|<font color="green">Test Pass</font> |As the artist, <br> I want anyone who goes to the website to be able to get the information they need easily <br> so that users are more likely to view my art and request a commission. <br><br> I know I am done when I have and inviting landing page with noticeable buttons for seeing the gallery and getting a quote for a commission.<br><br>Evidence:<br>The Home page has a big Image of a recent commission and has to easy to see,read and understand call to action buttons. <br> ![Home](assets/media/final-home-desktop.png)|
 |3|*<font color="yellow">Test Pass, more required</font>* |As a Potential Buyer, <br> I want to be able to get in touch with the artist about my idea and quickly get a quote <br> So I can get an idea how much it will cost and how long it will take <br><br> I know I am done when I have a way to contact the artist, and easy to follow instructions to get the important information across to get an accurate quote.<br><br>Evidence:<br> Potential buyers have a form that makes guides you to give all the important information to get an accurate quote, in a simple and quick format. (Currently only links to a thankyou.html, still needs to be connected to a backend system)<br>![Commission](assets/media/final-commission-desktop.png)||
 |4|*<font color="yellow">Test Pass, more required</font>* |As a First-time user,<br> I want to be able to find a community of like-minded people <br> so I can find people who share my interests. <br> <br> I know I am done users can quickly find social media links to the artists community, video tutorials and live streams.<br><br>Evidence:<br> First time users have a noticble footer that always shows at the bottom of the screen with simple, recognisable icons to portray the social network connected to the link. (currently only links to the homepage of the websites connected, actual social media accounts will need to be created to be linked).<br>![Footer](assets/media/final-footer-desktop.png)|
 |5|<font color="green">Test Pass</font> |As a new painter, <br> I want to be able to get tips on how to paint better <br> so that I can improve as a painter.<br> <br> I know I am done when users can find tutorials on the arists platorms. <br><br>Evidence:<br> In the gallery there are imbedded youtube videos that are tutorials. and there are links to the artists social media's in the footer.(Embedded video is a place holder)<br> ![Embedded Video Tutorials](assets/media/final-gallery-desktop.png)|
