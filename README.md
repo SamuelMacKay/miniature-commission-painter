@@ -122,6 +122,12 @@ If this section grows too long, you may want to split it off into a separate fil
 - CSS 
     - style.css: No errors were returned when passing through offical Jigsaw validator<br> http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fsamuelmackay.github.io%2Fminiature-commission-painter%2Fassets%2Fcss%2Fstyle.css&usermedium=all&vextwarning=&warning=1
 
+### Manual Testing
+- I have tested that this page works in different web browsers.
+- I have tested that the project is responsive and works with different device sizes. It looks good and functions as normal. 
+- I have tested all links, internal and external. They go to the correct destination and open in the correct way. 
+- I have tested that all text and fonts are readable and easy to understand.
+
 ### Bugs
 #### Bug 1
 - The landing page image was not scaling as intended over all screen sizes, so i added new code and multiple images to load at correct screen sizes
