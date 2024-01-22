@@ -143,7 +143,7 @@ nav img {
   }
 }
 
-@media (orientation: landscape) and (max-height: 281px){
+@media (orientation: landscape) and (max-height: 320px){
   .home-page-title h2 {
     font-size: 30px;
   }
@@ -336,6 +336,10 @@ ul {
 
 .text-area-font {
   font-size: 15px;
+}
+
+.form-height{
+  height: 525px;
 }
 
 /* ----------------------------------------------------------------------- Thankyou.html */

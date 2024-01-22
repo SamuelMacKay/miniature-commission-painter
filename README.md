@@ -211,7 +211,21 @@ New Code:
 
 #### Bug 6
 - Commissions page is breaking on shorter phone lengths and lanscape mode. can't scroll to see the lower part of the form.
+- Added a height of 525px to the form element.
+Original Code:
+```
+<form class="form-height" action="thankyou.html" method="#">
+```
+New Code:
+```
+<form class="form-height" action="thankyou.html" method="#">
 
+style:
+.form-height{
+  height: 525px;
+}
+
+```
 
 ### Validator Testing
 <!-->
