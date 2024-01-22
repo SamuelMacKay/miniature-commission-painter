@@ -109,6 +109,16 @@ You should also mention in this section any interesting bugs or problems you dis
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.-->
 
+### Validator Testing
+- HTML
+    - Index: No errors were returned when passing through the official W3C validator<br> https://validator.w3.org/nu/?doc=https%3A%2F%2Fsamuelmackay.github.io%2Fminiature-commission-painter%2Findex.html
+
+   - Lessons: No errors were returned when passing through the official W3C validator<br> https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Flessons.html
+
+   - s_3_1: No errors were returned when passing through the official W3C validator<br>https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Fs_3_1.html
+
+   - s_3_2: No errors were returned when passing through the official W3C validator<br>https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Fs_3_2.html
+
 ### Bugs
 #### Bug 1
 - The landing page image was not scaling as intended over all screen sizes, so i added new code and multiple images to load at correct screen sizes
