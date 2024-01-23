@@ -130,7 +130,7 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ### Bugs
 #### Bug 1
-- The landing page image was not scaling as intended over all screen sizes, so i added new code and multiple images to load at correct screen sizes
+- The landing page image was not scaling as intended over all screen sizes, so i added new code and media queries to make it scale correctly with 2 options of images.
 Original code:
 ```
 <picture class="hero-image">
@@ -210,7 +210,7 @@ New Code:
 ```
 
 #### Bug 4
-- The "back-to-gallery" button on the thankyou.html was not scaling to fight the text at smaller screen widths. added a height to the btg-button class.
+- The "back-to-gallery" button on the thankyou.html was not scaling to fit the text at smaller screen widths. added a height to the btg-button class.
 Original Code:
 ```
 style:
@@ -234,19 +234,19 @@ style:
 - Fixed by converting all images from .jpg to .webp and correcting their sizes.
 
 #### Bug 6
-- Commissions page is breaking on shorter phone lengths and lanscape mode. can't scroll to see the lower part of the form.
-- Added a height of 525px to the form element.
+- Commissions page was breaking on shorter phone lengths and lanscape mode. can't scroll to see the lower part of the form.
+- Added padding to the < section >.
 Original Code:
 ```
-        <form action="thankyou.html" target="_self">
+<section>
 ```
 New Code:
 ```
-        <form class="form-height" action="thankyou.html" target="_self">
+<section class="section-padding">
 
 style:
-.form-height{
-  height: 525px;
+.section-padding {
+  padding-bottom: 100px;
 }
 
 ```
@@ -285,21 +285,19 @@ To check the colors and fonts, I used Lighthouse in the Google devtools. The res
 
 ## Deployment
 
-<!--This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
-
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
   - In the GitHub repository, navigate to the Settings tab
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here - <https://code-institute-org.github.io/love-running-2.0/index.html>-->
+The live link can be found here - <https://samuelmackay.github.io/miniature-commission-painter/>
 
 ## Credits
   
-  
-
 ### Content
 - Processes from the CI Love Running project was used to help create this website - [CI Love Running](https://code-institute-org.github.io/love-running-2.0/index.html)
+
+- The Modal was taken from w3schools - [W3Schools Modal](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img)
 
 - HTML, CSS and Javascript code help was taken from w3schools - [W3Schools](https://www.w3schools.com/)
 
@@ -308,6 +306,8 @@ The live link can be found here - <https://code-institute-org.github.io/love-run
 ### Media
 
 - embedded video (https://www.youtube.com/watch?v=DoUPT_ctBBY&t=520s) from [Richard Gray](https://www.youtube.com/@demonrich) as a placeholder for how videos could be shown. 
+
+- All photos in gallery and home page are work from Sam MacKay - [Instagram] (https://www.instagram.com/mackayver/)
 
 
 #### Icons
