@@ -71,7 +71,7 @@ button:focus:not(:focus-visible) {
 }
 
 .text-shadow {
-  text-shadow: -2px 0 black, 0 2px black, 0 0 black, 0 0 black;
+  text-shadow: -2px 0 black, 0 0px black, 0 0 black, 0 0 black;
 }
 
 .cta-button {
