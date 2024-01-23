@@ -3,7 +3,7 @@
 MacKay's Painting Corner is a site for Table Top hobby enthusiasts who are interested in having their armies/miniatures painted for them, so they can get to playing the games faster and don't have to stress about learning the skills needed to become a high quality painter.
 The site will have an easy to see gallery showcasing the painting standards and abilities of the artist, as well is quotes of other satisfied customers. as well as an easy to use way to get a quote for the site users own projects.
 
-![Responsice Mockup]()
+![Responsice Mockup](assets/media/final-mockup.png)
 
 ## User Stories 
 |Story No.|Story|
@@ -101,13 +101,27 @@ User Story Number - 4<br>
 
 ## Testing
 
-<!-- In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+This is a sample of shots of what the site looks like on different devices. 
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+#### Desktop
+|Firefox 120.0.1|Chrome 120.0.6099.225|
+| ------------- | ------------------ |
+|![firefox index page](assets/media/final-firefox-home.png)|![chrome index page](assets/media/final-chrome-home.png)|
+|![firefox gallery page](assets/media/final-firefox-gallery.png)|![chrome gallery page](assets/media/final-chrome-gallery.png)|
+|![firefox commission page](assets/media/final-firefox-commission.png)|![chrome commission page](assets/media/final-chrome-commission.png)|
+|![firefox thankyou page](assets/media/final-firefox-thankyou.png))|![chrome thankyou page](assets/media/final-chrome-thankyou.png)|
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+![responsive chrome and firefox Small](assets/media/final-responsive-small.png)
+![responsive chrome and firefox Medium](assets/media/final-responsive-medium.png)
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.-->
+#### Mobile
+
+##### Safari iOS Phone 17.2
+
+![iPhone index page](assets/media/home-ios-phone.jpg)
+![iPhone gallery page](assets/media/gallery-ios-phone.jpg)
+![iPhone commission page](assets/media/commission-ios-phone.jpg)
+![iPhone thankyou page](assets/media/thankyou-ios-phone.jpg)
 
 ### Validator Testing
 - HTML
@@ -285,19 +299,44 @@ To check the colors and fonts, I used Lighthouse in the Google devtools. The res
 
 ## Deployment
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows:
-  - In the GitHub repository, navigate to the Settings tab
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+### Cloning & Forking
+#### Fork
+1. On GitHub.com, navigate to the [SamuelMacKay/miniature-commission-painter](https://github.com/SamuelMacKay/miniature-commission-painter) repository.
+2. In the top-right corner of the page, click Fork.
+3. By default, forks are named the same as their parent repositories. You can change the name of the fork to distinguish it further.
+4. Add a description to your fork.
+5. Click Create fork.
 
-The live link can be found here - <https://samuelmackay.github.io/miniature-commission-painter/>
+#### Clone
+1. Above the list of files click the button that says 'Code'.
+2. Copy the URL for the repository.
+3. Open Terminal. Change the directory to the location where you want the cloned directory.
+4. Type git clone, and then paste the URL
+5. Press Enter.
+
+### Local Deployment
+1. Sign up to [Gitpod](https://gitpod.io/)
+2. Download the Gitpod browser extension.
+3. On GitHub.com, navigate to the [SamuelMacKay/miniature-commission-painter](https://github.com/SamuelMacKay/miniature-commission-painter) repository.
+4. Above the list of files click the button that says 'Gitpod'.
+
+### Remote Deployment 
+ The site was deployed to Github pages. If you have forked/cloned the repository the steps to deploy are:
+ 1. On GitHub.com, navigate to your repository.
+ 2. Navigate to the settings tab.
+ 3. Click on the tab called 'pages' on the left hand side.
+ 4. From the source drop down list under the heading Build and deployment, select main.
+ 5. The page will hten provide the link to the website.
+
+ The live link can be found here - [Mackay's Painting Corner](https://samuelmackay.github.io/miniature-commission-painter/)
 
 ## Credits
   
 ### Content
 - Processes from the CI Love Running project was used to help create this website - [CI Love Running](https://code-institute-org.github.io/love-running-2.0/index.html)
 
-- The Modal was taken from w3schools - [W3Schools Modal](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img)
+- The Modal was taken from w3schools and Daniel Hamilton:
+ - [W3Schools Modal](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img) - [Daniel Hamilton](https://github.com/dlhamilton)
 
 - HTML, CSS and Javascript code help was taken from w3schools - [W3Schools](https://www.w3schools.com/)
 
