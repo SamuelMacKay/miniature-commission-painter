@@ -71,7 +71,35 @@ button:focus:not(:focus-visible) {
 }
 
 .text-shadow {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -2px 0 black, 0 2px black, 0 0 black, 0 0 black;
+}
+
+.cta-button {
+  background: linear-gradient(180deg, #e98600, #e84610);
+  border: solid #33383d;
+  
+}
+
+#quote-button {
+  background: linear-gradient(180deg, #e98600, #e84610);
+  border: solid #495057;
+  
+}
+
+.cta-button:hover {
+  background: linear-gradient(180deg, #e84610, #e84610);
+
+}
+
+.btn-primary {
+  --bs-btn-bg: #e98600;
+  --bs-btn-border-color: #e98600;
+  --bs-btn-hover-bg: #e84610;
+  --bs-btn-hover-border-color: #e84610;
+}
+
+.commission-title {
+  color: #e98600;
 }
 
 /* ----------------------------------------------------------------------- Nav Bar */
@@ -97,6 +125,9 @@ nav img {
 
 }
 
+.nav-justified .nav-item .nav-link {
+  height: 35px;
+}
 /* ----------------------------------------------------------------------- Landing Page */
 
 #landing-img {
@@ -155,24 +186,6 @@ nav img {
 
 }
 
-.cta-button {
-  background: linear-gradient(180deg, #e98600, #e84610);
-  border-style: solid;
-  border-color: #e84610;
-}
-
-.cta-button:hover {
-  background: linear-gradient(180deg, #e84610, #e84610);
-
-}
-
-.btn-primary {
-  --bs-btn-bg: #e98600;
-  --bs-btn-border-color: #e98600;
-  --bs-btn-hover-bg: #e84610;
-  --bs-btn-hover-border-color: #e84610;
-}
-
 #hero source {
   max-width: 100%;
   max-height: 100vh;
@@ -183,11 +196,6 @@ nav img {
   width: 100%;
   position: fixed;
 }
-
-.commission-title {
-  color: #e98600;
-}
-
 
 /* ----------------------------------------------------------------------- Footer */
 .footer {
@@ -241,9 +249,8 @@ ul {
 
 #photo img {
   width: 100%;
-  border-style: solid;
-  border-color: #495057;
-}
+  border: solid #495057;
+  }
 
 #photo iframe {
   width: 100%;
@@ -267,8 +274,6 @@ ul {
   text-align: center;
   padding: 15px 0;
   height: 110px;
-
-
 }
 
 .name-and-email {
@@ -285,6 +290,9 @@ ul {
   padding-left: 40%;
 }
 
+.section-padding {
+  padding-bottom: 100px;
+}
 
 #emailaddress {
   margin: auto;
@@ -325,7 +333,7 @@ ul {
 }
 
 .font-size {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -333,8 +341,8 @@ ul {
   font-size: 15px;
 }
 
-.form-height{
-  height: 525px;
+.form-floating>label {
+  z-index: 0;
 }
 
 /* ----------------------------------------------------------------------- Thankyou.html */
@@ -398,7 +406,7 @@ ul {
   opacity: 0.7;
 }
 
-/* The Modal (background) */
+/* The Modal Taken from w3schools.com (background) */
 .modal {
   display: none;
   /* Hidden by default */
