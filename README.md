@@ -3,7 +3,7 @@
 MacKay's Painting Corner is a site for Table Top hobby enthusiasts who are interested in having their armies/miniatures painted for them, so they can get to playing the games faster and don't have to stress about learning the skills needed to become a high quality painter.
 The site will have an easy to see gallery showcasing the painting standards and abilities of the artist, as well is quotes of other satisfied customers. as well as an easy to use way to get a quote for the site users own projects.
 
-![Responsice Mockup](assets/media/final-mockup.png)
+![Responsive Mockup](assets/media/final-mockup.png)
 
 ## User Stories 
 |Story No.|Story|
@@ -118,10 +118,10 @@ This is a sample of shots of what the site looks like on different devices.
 
 ##### Safari iOS Phone 17.2
 
-![iPhone index page](assets/media/home-ios-phone.jpg)
-![iPhone gallery page](assets/media/gallery-ios-phone.jpg)
-![iPhone commission page](assets/media/commission-ios-phone.jpg)
-![iPhone thankyou page](assets/media/thankyou-ios-phone.jpg)
+![iPhone index page](assets/media/home-ios-phone.png)
+![iPhone gallery page](assets/media/gallery-ios-phone.png)
+![iPhone commission page](assets/media/commission-ios-phone.png)
+![iPhone thankyou page](assets/media/thankyou-ios-phone.png)
 
 ### Validator Testing
 - HTML
